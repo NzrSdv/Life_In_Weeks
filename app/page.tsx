@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <div>
-      {DateOFBirth == undefined ? <InputComponent onChange={changeDate}/> : <TableComponent DateOFBirth={DateOFBirth}/>}
+      {DateOFBirth == undefined ? <InputComponent onChange={changeDate} /> : <><button className="" onClick={() => changeDate(undefined)}>Change Date</button> <TableComponent DateOFBirth={DateOFBirth} /></>}
     </div>
   );
 }

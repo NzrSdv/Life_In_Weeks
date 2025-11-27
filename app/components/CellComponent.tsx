@@ -6,7 +6,7 @@ type Props = {
 }
 
 function CellComponent({ colored }: Props) {
-    return <div className={`w-5 h-5 rounded-sm ${colored ? 'bg-red-500' : 'bg-green-500'}`}>
+    return <div className={`size-5 rounded-sm ${colored ? 'bg-red-500' : 'bg-green-500'}`}>
 
     </div>
 
